@@ -5,7 +5,7 @@ package com.example.igroup.trendinggitrepoandroidretrofit2.Retrofit;
  */
 
 public class ApiUtils {
-    public static final String BASE_URL="https://api.github.com/search";
+    public static final String BASE_URL="https://api.github.com/search/";
     public static GitRepositories getGitRepositories(){
         return RetrofitClient.getClient(BASE_URL).create(GitRepositories.class);
     }
